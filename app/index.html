@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vice Light Studio — GTA 6 Cover Maker</title>
+<link rel="stylesheet" href="style.css">
+<script src="./src/shots.js"></script>
+</head>
+<body>
+<header>
+  <div class="logo">VICE LIGHT <span>STUDIO</span></div>
+  <div class="subtitle">Your photo, six panels, one poster. Pick photos, write the title, export the cover.</div>
+</header>
+<main>
+  <aside>
+    <section>
+      <h2>1 · Layout</h2>
+      <div id="layoutBox" class="chips"></div>
+    </section>
+    <section>
+      <h2>2 · Photos</h2>
+      <p class="hint">Click a panel below, then click a photo to place it there. Drag the cover to pan, scroll to zoom.</p>
+      <div id="slotRow" class="slots"></div>
+      <div id="photoGrid" class="photo-grid"></div>
+      <div class="row">
+        <button id="shuffleBtn" class="btn">Shuffle photos</button>
+        <button id="fillBtn" class="btn">Fill all with selected</button>
+      </div>
+      <label class="field">Zoom panel
+        <input id="zoomRange" type="range" min="1" max="2.4" step="0.05" value="1">
+      </label>
+    </section>
+    <section>
+      <h2>3 · Grade</h2>
+      <div id="gradeBox" class="swatches"></div>
+      <div id="finishBox" class="chips"></div>
+    </section>
+    <section>
+      <h2>4 · Title</h2>
+      <label class="field">Title
+        <input id="titleInput" type="text" maxlength="24" value="GOLDEN COAST">
+      </label>
+      <label class="field">Tagline
+        <input id="taglineInput" type="text" maxlength="48" value="Every sunset is a getaway">
+      </label>
+      <label class="field">Pill badge
+        <input id="pillInput" type="text" maxlength="16" value="LEONIDA">
+      </label>
+    </section>
+    <section>
+      <h2>5 · Export</h2>
+      <div id="sizeBox" class="chips">
+        <button class="chip active" data-size="square">1080 × 1080</button>
+        <button class="chip" data-size="portrait">1080 × 1350</button>
+        <button class="chip" data-size="wide">1920 × 1080</button>
+      </div>
+      <button id="downloadBtn" class="btn primary">Download cover PNG</button>
+    </section>
+  </aside>
+  <section class="stage">
+    <canvas id="cover" width="1080" height="1080"></canvas>
+    <div id="sizeLabel" class="status">Loading…</div>
+  </section>
+</main>
+<script type="module" src="./src/app.js"></script>
+</body>
+</html>
