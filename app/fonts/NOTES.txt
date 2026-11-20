@@ -1,0 +1,13 @@
+Fonts (Google Fonts, SIL Open Font License 1.1):
+- Anton Regular — https://fonts.google.com/specimen/Anton
+- Yellowtail Regular — https://fonts.google.com/specimen/Yellowtail
+
+Photos (all downloaded inside this build session):
+- Unsplash (Unsplash License, free to use): hero-car, woman-red, woman-turquoise,
+  man-beard, surfer, beach-sunset, palm-beach, street-night
+  (https://unsplash.com — individual photographers credited on the site)
+- Wikimedia Commons: neon-hotel ("Boulevard Hotel (Neon sign), Miami Beach",
+  CC BY), oceandrive ("Miami Beach - Ocean Drive 01", CC BY, cropped from a
+  vintage postcard scan)
+
+No Rockstar Games artwork, logos, or fonts are used anywhere in this app.
